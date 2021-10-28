@@ -1,7 +1,8 @@
-import org.testng.annotations.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Array {
     public static final class Account {
@@ -25,7 +26,7 @@ public class Array {
         }
     }
 
-    @Test
+
 
     public static void main(String [] args){
         Account [] accounts = new Account[5];
@@ -62,7 +63,7 @@ public class Array {
 
     }
 
-    @Test
+
     //        Write a program that finds the summation of every number from 1 to num.
 //        The number will always be a positive integer greater than 0.
 
@@ -79,7 +80,7 @@ public class Array {
         System.out.println(summ);
     }
 
-    @Test
+
     //            1. Program to print the duplicate elements of an array
 //            In this program, we need to print the duplicate elements present in the array.
 //            This can be done through two loops.
@@ -111,7 +112,7 @@ public class Array {
         }
     }
 
-    @Test
+
 //     3. Program to print the elements of an array in reverse order
 //            In this program, we need to print the elements of the array in reverse order that is; the last element should be displayed first, followed by second last element and so on.
 //
@@ -135,5 +136,40 @@ public class Array {
 //             ) {
 //            System.out.println(newList1);
         }
+
+    public void solution() {
+        String str= "123456";
+        char [] newStr=str.toCharArray();
+
+//        char [] result = new char [newStr.length];
+    String result ="";
+    int k=0;
+    for(int i=newStr.length-1; i>=0; i-- ){
+
+            result +=newStr[i];
+            k++;
     }
+    System.out.println((result ));
+    }
+
+
+
+  public void squareDigits() {
+              int n = 91119;
+            List<Integer>  list = new ArrayList<>();
+
+    while((Math.log10(n))>0){
+                list.add(n%10);
+                n/=10;
+            }
+            List<Integer>  listNumber = new ArrayList<>();
+            for(int a:list){
+                listNumber.add(a*a);
+            }
+            String newS = String.valueOf(listNumber);
+            System.out.print(newS);
+    }
+
+}
+
 

@@ -1,5 +1,3 @@
-import com.beust.jcommander.DynamicParameter;
-import org.testng.annotations.Test;
 
 import javax.annotation.processing.Generated;
 import java.beans.Transient;
@@ -14,7 +12,7 @@ public class DifferentTasks {
         Expected Output :
         1000.0 inch is 25.4 meters
  */
-   @Test
+
     public void convertarToMeters(){
 
         int NumberIntch = 1000;
@@ -29,7 +27,7 @@ Input the number of minutes: 3456789
 Expected Output :
 3456789 minutes is approximately 6 years and 210 days
 */
-    @Test
+
     public void convertarTime(){
 
         int NumberMinutes = 2000000;

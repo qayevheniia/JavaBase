@@ -1,4 +1,3 @@
-import org.testng.annotations.Test;
 
 public class Switch {
 
@@ -10,7 +9,7 @@ public class Switch {
     //Expected Output :
     //February 2016 has 29 days
 
-@Test
+
     public void NameOfMonth(){
         int NumberOfMonth = 2;
         int year = 2012 ;
